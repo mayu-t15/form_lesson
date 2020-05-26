@@ -4,12 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Registration form">
     <title>HTML応用編 ~登録フォームを作ってみよう~</title>
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
+    <div class="wrapper">
+      <div class="inner">
+
+        <div class="main-contents">
+          <h1 class="form-title">アカウント作成</h1>
+
+          <div class="start-with">
+
+            <div class="is-half-width">
+              <a href="" class="is-facebook button">Facebookでスタート</a>
+            </div>
+
+            <div class="is-half-width">
+              <a href="" class="is-google button">Googleでスタート</a>
+            </div>
+
+          </div>
+          <p class="is-default-text">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+          <div class="devider">
+            <p class="is-default-text">アカウント情報</p>
+          </div>
+          <form class=”form-content”  action=”#” method=”POST”>
+            <div class="row name-box">
+              <div class="name is-half-width">
+                <p class="label-text">名字
+                  <span class="alert"> ※</span>
+                </p>
+                <input type="text" name="lastname" class="input-init input-area">
+              </div>
+              <div class="name is-half-width">
+                <p class="label-text">名前
+                  <span class="alert"> ※</span>
+                </p>
+                <input type="text" name="firstname"class="input-init input-area">
+              </div>
+            </div>
+            <div class="gender-contents">
+              <p class="label-text">性別</p>
+              ココ作り直し
+              <input type="radio">男性
+              <input type="radio">女性
+              <input type="radio">その他
+
+            </div>
+            
+          </form>
+        </div>
+
+        <div class="footpart">
+
+        </div>
+
+      </div>
+    </div>
 
   </body>
 </html>

@@ -1,1 +1,140 @@
 @charset "utf-8";
+
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  transition: .3s;
+  padding: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+
+
+.wrapper {
+  padding: 32px 0;
+  width: 100%;
+  background-color: #f2f6f7;
+}
+.inner {
+  margin: auto;
+  width: 640px;
+}
+
+
+.main-contents {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+  box-sizing: border-box;
+  padding: 48px 64px;
+  text-align: center;
+}
+
+.form-title {
+  color: #545658;
+  font-size: 24px;
+}
+
+.start-with {
+  margin-top: 24px;
+  display: flex;
+  margin-bottom: 8px;
+}
+.is-half-width {
+  width: 50%;
+  margin-left: 10px;
+}
+.start-with-button:first-child {
+  margin-left: none;
+}
+
+.is-facebook, .is-google {
+  text-decoration: none;
+  display: block;
+}
+.is-facebook {
+  background-color: #3b5999;
+  border-color: #3b5999;
+  color: #fff;
+}
+.is-google {
+  background-color: #fff;
+  color: #dd4b39;
+}
+
+.is-default-text {
+  color: #949697;
+  font-size: 12px;
+}
+
+
+.devider {
+  margin: 20px 0;
+  position: relative;
+}
+.devider > p {
+  display: inline-block;
+  padding: 0 10px;
+  background-color: #fff;
+  position: relative;
+/* （このrelative=スタックレベル解消のため？relativeはどこに対してなのか。） */
+}
+.devider::before {
+  background-color: #ececec;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+
+/* 各要素にマージンつける */
+.row {
+  margin-bottom: 20px;
+}
+/* ラベルのテキスト全てに */
+.label-text {
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #545658;
+  text-align: left;
+}
+/* テキストぼっくす全般 
+初期設定*/
+.input-init {
+
+}
+/* テキストボックス全般、スタイル */
+.input-area {
+  background-color: #fbfbfb;
+  border-radius: 3px;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  color: #545658;
+  font-size: 13px;
+  height: 36px;
+  line-height: 2;
+  padding: 5px;
+  width: 100%;
+}
+.alert {
+  color: #dd4b39;
+}
+
+
+.name-box {
+  display: flex;
+}
+.name {
+  margin-left: 16px;
+}
+.name:first-child {
+  margin-left: 0;
+}
