@@ -183,7 +183,7 @@
   margin-left: 15px;
 }
 .gender-choice:first-child {
-  margin-left: none;
+  margin-left: 0;
 }
 .gender-choice > span{
   display: inline-block;
@@ -314,7 +314,7 @@
 .resend-mail {
   display: inline-block;
 }
-.foot-part > a:hover {
+.foot-part a:hover {
   box-sizing: border-box;
   border-bottom: 1px solid #ececec;
   border-bottom-color: #01bfbd;
