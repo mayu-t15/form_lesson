@@ -13,21 +13,17 @@
   <body>
     <div class="wrapper">
       <div class="inner">
-
         <div class="main-contents">
           <h1 class="form-title">アカウント作成</h1>
-
           <div class="start-with">
-
             <div class="start-with-column is-half-width">
-              <a href="" class="is-facebook button">Facebookでスタート</a>
+              <a href="#" class="button-init button is-full-width is-facebook">Facebookでスタート</a>
             </div>
-
             <div class="start-with-column is-half-width">
-              <a href="" class="is-google button">Googleでスタート</a>
+              <a href="#" class="button-init button is-full-width is-google button">Googleでスタート</a>
             </div>
-
           </div>
+
           <p class="supplement-text is-default-text">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
           <div class="devider">
             <p class="is-default-text">アカウント情報</p>
@@ -38,18 +34,18 @@
                 <p class="label-text">名字
                   <span class="alert"> ※</span>
                 </p>
-                <input type="text" name="lastname" class="input-init input-area">
+                <input type="text" name="lastname" class="input-init input-area" required>
               </div>
               <div class="name is-half-width">
                 <p class="label-text">名前
                   <span class="alert"> ※</span>
                 </p>
-                <input type="text" name="firstname"class="input-init input-area">
+                <input type="text" name="firstname"class="input-init input-area" required>
               </div>
             </div>
+
             <div class="gender-section row">
               <p class="label-text">性別</p>
-              <!-- ↓なんでここはlabelが良いのか??-->
               <div class="gender-content">
                 <label class="gender-choice">
                   <input type="radio" name="gender" value="male" class="gender-input">
@@ -69,7 +65,8 @@
             <div class="origin row is-half-width">
               <p class="label-text">出身</p>
               <div class="select-area">
-                <select name="origin" id="origin" class="input-init input-area origin-input">
+                <!-- ここでidをつけておくのは？？ -->
+                <select name="origin" id="origin" class="input-init input-area">
                   <option value="tokyo">東京</option>
                   <option value="chiba">千葉</option>
                   <option value="saitama">埼玉</option>
@@ -77,12 +74,14 @@
                 </select>
               </div>
             </div>
+
             <div class="email row">
               <p class="label-text">Eメール
                 <span class="alert"> ※</span>
               </p>
-              <input type="email" name="email" class="input-init input-area is-full-width" placeholder="ex) hoge@example.com">
+              <input type="email" name="email" class="input-init input-area is-full-width" placeholder="ex) hoge@example.com" required>
             </div>
+
             <div class="tel row">
               <p class="label-text">電話番号</p>
               <input type="tel" name="tel" class="input-init input-area is-full-width" placeholder="ex) 09012345678">
@@ -91,14 +90,15 @@
               <p class="label-text">パスワード
                 <span class="alert"> ※</span>
               </p>
-              <input type="password" name="password" class="input-init input-area is-full-width">
+              <input type="password" name="password" class="input-init input-area is-full-width" required>
             </div>
             <div class="password row">
               <p class="label-text">パスワード（確認用）
                 <span class="alert"> ※</span>
               </p>
-              <input type="password" name="password-confirm" class="input-init input-area is-full-width">
+              <input type="password" name="password-confirm" class="input-init input-area is-full-width" required>
             </div>
+
             <div class="course row">
               <p class="label-text">希望コース</p>
               <div class="course-option">
@@ -114,10 +114,12 @@
                 <label class="course-label" for="app">アプリ</label>
               </div>
             </div>
+
             <div class="comment row">
               <p class="label-text">備考</p>
-              <textarea name="comment" class="input-init input-area is-full-width" placeholder="何かあればご記入ください"></textarea>
+              <textarea name="comment" class="input-init input-area" placeholder="何かあればご記入ください"></textarea>
             </div>
+            
             <div class="row">
               <input type="submit" value="アカウント作成" class="input-init button submit-btn is-full-width">
             </div>
@@ -125,7 +127,7 @@
           </form>
         </div>
 
-        <div class="footpart">
+        <div class="foot-part">
           <p>すでにアカウントをお持ちですか？<a href="" class="link-color">ログイン</a></p>
           <a href="" class="link-color resend-mail">認証メールが届きませんか？</a>
         </div>
